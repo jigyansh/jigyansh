@@ -10,10 +10,10 @@
   </head>
 <script>
 <body ng-app="LunchCheck">
-   <div class="container" ng-controller="LunchCheckController">
+   <div class="container">
      <h1>Lunch Checker</h1>
 
-         <div class="form-group">
+         <div class="form-group" ng-controller="LunchCheckController">
              <input id="lunch-menu" type="text"
              placeholder="list comma separated dishes you usually have for lunch"
              class="form-control">
@@ -23,6 +23,7 @@
          </div>
          <div class="form-group message">
            <!-- Your message can go here. -->
+             {{message}}
          </div>
    </div>
 
